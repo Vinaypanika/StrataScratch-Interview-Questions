@@ -179,7 +179,7 @@ FROM facebook_posts p
 INNER JOIN facebook_reactions r
     ON p.poster = r.poster
 WHERE r.reaction = 'heart'
-LIMIT 1; -- Note
+LIMIT 1;
 ```
 
 Note: _The official solution has only 1 retrieved record, however the question did not specifically request for the solution to be limited to one. Upon browsing the Solution Discussion, other users also found the official solution to be incorrect and it should be without `LIMIT 1`. For the sake of solving the question, I'm limiting my retrieved records to 1 record._
